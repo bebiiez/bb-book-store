@@ -9,6 +9,9 @@ import { Redirect } from 'react-router'
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Home from './pages/Home';
+import Book from './pages/Book';
+import AddBook from './component/AddBook';
+import Cart from './pages/Cart';
 
 const { Header, Content } = Layout;
 
@@ -25,6 +28,9 @@ function App() {
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/home" component={Home}/>
+          <Route exact path="/book" component={Book}/>
+          <Route exact path="/addBook" component={AddBook}/>
+          <Route exact path="/cart" component={Cart}/>
           <Redirect to='/home' />
         </Switch>
       </Content>
